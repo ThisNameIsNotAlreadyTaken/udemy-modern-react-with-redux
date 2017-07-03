@@ -1,2 +1,2 @@
-# Udemy "Modern React with Redux" course materials & exercises
+# Udemy "Modern React with Redux" course
 materials & exercises
