@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import Assignment1 from './assignment1/assignment1';
+import Assignment2 from './assignment2/assignment2';
 
 class App extends Component {
     constructor(props) {
@@ -10,7 +11,7 @@ class App extends Component {
 
     render(){
         return (
-           <Assignment1 />
+           <Assignment2 />
         );
     }
 }

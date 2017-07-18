@@ -31,7 +31,7 @@ class Assignment1 extends Component {
         const messageClass = `form-group message ${(cssResult === 'success' ? 'text-success' : cssResult === 'error' ? 'text-danger' : '')}`;
 
         return (
-            <div>
+            <div className="assignment1">
                 <h1>Lunch Checker</h1>
                 <div className={inputClass}>
                     <input id="lunch-menu" type="text" placeholder="list comma separated dishes you usually have for lunch" className="form-control" 

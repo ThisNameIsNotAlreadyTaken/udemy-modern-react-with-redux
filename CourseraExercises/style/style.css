@@ -1,4 +1,23 @@
-.message {
+.assignment1 .message {
 	font-size: 1.3em;
     font-weight: bold;
+}
+
+.assignment2 .emptyMessage {
+   font-weight: bold;
+   color: red;
+   font-size: 1.2em;
+}
+
+.assignment2 li {
+   margin-bottom: 7px;
+   font-size: 1.2em;
+}
+
+.assignment2 li > button {
+   margin-left: 6px;
+}
+
+.assignment2 button > span:first-of-type {
+   color: green;
 }
