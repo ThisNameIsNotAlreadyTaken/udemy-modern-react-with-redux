@@ -16,6 +16,7 @@ class Menu extends Component {
                             <li><Link to="/assignment1" activeClassName="active">Assignment 1</Link></li>
                             <li><Link to="/assignment2" activeClassName="active">Assignment 2</Link></li>
                             <li><Link to="/assignment3" activeClassName="active">Assignment 3</Link></li>
+                            <li><Link to="/assignment4" activeClassName="active">Assignment 4</Link></li>
                         </ul>
                         <ul className="nav navbar-nav navbar-right">
                             <li><Link to="/">Back</Link></li>

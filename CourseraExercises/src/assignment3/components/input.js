@@ -14,12 +14,13 @@ class Input extends Component {
     }
 
     getItems(){
-        this.props.onButtonClick({
-            showList: true, 
-            isLoading: true
-        });
+        this.props.setIsLoading(true);
+
         this.props.getItems(this.state.term, () => {
-            this.props.setIsLoading(false);
+            this.props.onButtonClick({
+                showList: true, 
+                isLoading: false
+            });
         });
     }
 
