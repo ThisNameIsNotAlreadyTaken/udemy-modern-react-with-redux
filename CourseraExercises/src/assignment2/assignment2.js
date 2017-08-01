@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import ToBuyList from './tobuy_list';
-import BoughtList from './bought_list';
+import ToBuyList from './components/tobuy_list';
+import BoughtList from './components/bought_list';
 
 class Assignment2 extends Component {
     constructor(props) {
