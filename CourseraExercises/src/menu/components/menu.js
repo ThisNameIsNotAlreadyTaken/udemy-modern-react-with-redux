@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import CustomLink from './custom_link';
+
 class Menu extends Component {
     render() {
         return (
@@ -13,10 +15,10 @@ class Menu extends Component {
                     {/* Collect the nav links, forms, and other content for toggling */}
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul className="nav navbar-nav">
-                            <li><Link to="/assignment1" activeClassName="active">Assignment 1</Link></li>
-                            <li><Link to="/assignment2" activeClassName="active">Assignment 2</Link></li>
-                            <li><Link to="/assignment3" activeClassName="active">Assignment 3</Link></li>
-                            <li><Link to="/assignment4" activeClassName="active">Assignment 4</Link></li>
+                            <CustomLink to="/assignment1" label="Assignment 1"/>
+                            <CustomLink to="/assignment2" label="Assignment 2"/>
+                            <CustomLink to="/assignment3" label="Assignment 3"/>
+                            <CustomLink to="/assignment4" label="Assignment 4"/>
                         </ul>
                         <ul className="nav navbar-nav navbar-right">
                             <li><Link to="/">Back</Link></li>

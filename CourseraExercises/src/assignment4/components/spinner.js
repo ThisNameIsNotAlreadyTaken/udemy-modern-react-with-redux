@@ -6,16 +6,11 @@ class Spinner extends Component {
     }
 
     render() {
-        if (this.props.show) {
-            return (
-                <div className="loader-wrapper">
-                    <div id="loader"></div>
-                </div>
-            );
-        }
-        else {
-            return (<noscript/>);
-        }
+        return (
+            <div className="loader-wrapper">
+                <div id="loader"></div>
+            </div>
+        );
     }
 }
 

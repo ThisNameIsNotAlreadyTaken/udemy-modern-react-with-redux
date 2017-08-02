@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import CustomLink from '../../menu/components/custom_link';
 
 class Menu extends Component {
     render() {
@@ -11,8 +11,8 @@ class Menu extends Component {
                     </div>
                     <div id="navbar" className="collapse navbar-collapse">
                         <ul className="nav navbar-nav">
-                            <li><Link to={`${this.props.match.url}/welcome`} activeClassName="active">Home</Link></li>
-                            <li><Link to={`${this.props.match.url}/categories`} activeClassName="active">Categories</Link></li>
+                            <CustomLink to={`${this.props.match.url}/welcome`} label="Home"/>
+                            <CustomLink to={`${this.props.match.url}/categories`} label="Categories"/>
                         </ul>
                     </div>
                 </div>

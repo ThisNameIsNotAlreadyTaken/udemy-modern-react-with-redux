@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import Menu from './menu/components/menu';
 import Assignment1 from './assignment1/assignment1';
@@ -14,7 +14,7 @@ ReactDOM.render(
             <Menu />
             <div className="container">
                 <Switch>
-                    <Route exact path="/" component={Assignment1} />
+                    <Route exact path="/" component={() => (<Redirect to="/assignment1" />)} />
                     <Route path="/assignment1" component={Assignment1} />
                     <Route path="/assignment2" component={Assignment2} />
                     <Route path="/assignment3" component={Assignment3} />

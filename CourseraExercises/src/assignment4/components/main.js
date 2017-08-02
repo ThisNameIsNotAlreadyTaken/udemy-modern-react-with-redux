@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Menu from './menu';
-import Spinner from './spinner';
 import Start from './start';
-import CategoriesList from './categories_list';
+import Categories from './categories';
 
 class Main extends Component {
     constructor(props) {
@@ -14,13 +13,12 @@ class Main extends Component {
     render() {
         return (
             <div className="assignment4">
-                <Spinner show={ false }/>
                 <Menu match={this.props.match} />
                 <div className="container">
                     <Switch>
-                        <Route exact path={`${this.props.match.url}`} component={() => (<Start match={this.props.match}/>)} />
+                        <Route exact path={`${this.props.match.url}`} component={() => (<Redirect to={`${this.props.match.url}/welcome`}/>)} />
                         <Route path={`${this.props.match.url}/welcome`} component={() => (<Start match={this.props.match}/>)} />
-                        <Route path={`${this.props.match.url}/categories`} component={CategoriesList} />
+                        <Route path={`${this.props.match.url}/categories`} component={Categories} />
                     </Switch>
                 </div>
             </div>
