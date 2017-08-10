@@ -19,6 +19,7 @@ class Menu extends Component {
                             <CustomLink to="/assignment2" label="Assignment 2"/>
                             <CustomLink to="/assignment3" label="Assignment 3"/>
                             <CustomLink to="/assignment4" label="Assignment 4"/>
+                            <CustomLink to="/assignment5" label="Assignment 5"/>
                         </ul>
                         <ul className="nav navbar-nav navbar-right">
                             <li><Link to="/">Back</Link></li>

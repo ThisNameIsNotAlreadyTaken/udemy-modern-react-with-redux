@@ -7,6 +7,7 @@ import Assignment1 from './assignment1/assignment1';
 import Assignment2 from './assignment2/assignment2';
 import Assignment3 from './assignment3/assignment3';
 import Assignment4 from './assignment4/assignment4';
+import Assignment5 from './assignment5/assignment5';
 
 ReactDOM.render(
     <BrowserRouter basename="/udemy-react">
@@ -19,6 +20,7 @@ ReactDOM.render(
                     <Route path="/assignment2" component={Assignment2} />
                     <Route path="/assignment3" component={Assignment3} />
                     <Route path="/assignment4" component={Assignment4} />
+                    <Route path="/assignment5" component={Assignment5} />
                 </Switch>
             </div>
         </div>
